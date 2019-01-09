@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Karolina V.</title>
+</head>
+    <body onload="initView()">
+        <section id="home" class="section home ">
+            <div id="homeContainer" class="container-full ">
+                <div class="row end-of-row ">
+                    <div class="col-12"><h1 class="thin">Karolina</h1></div>
+                </div>
+                <div class="row end-of-row ">
+                    <div class="col-12"><h2 class="thin">Valentova</h2></div>
+                </div>
+            </div>
+        </section>
+        <!--   -->
+        <section id="aboutMe" class="section aboutMe">
+            <div id="aboutMeContainer" class="container-full">
+                <div class="row end-of-row">
+                    <div class="col-12">
+                        <h1 class="thin">About me</h1>
+                    </div>
+                </div>
+                <div class="row"></div>
+                <div class="row"></div>
+                <div class="row">
+                    <div class="col-6 end-of-row  disable-phone-tablet">
+                        <div class="bio-pic"><img class="picture" src="images/me.png" alt="img"></div>
+                    </div>
+                    <div class="col-6">
+                        <div class="bio-pic-mobile" style="display: none;"><img class="picture" src="images/me.png" alt="img"></div>
+                        <div class="bio">
+                            <p>Who am I? A complete newby to coding, with a little background at graphic design. Mostly producing classic art techniques such as painting, printing, sculpting, composing music etc...
+                                <br>
+                                <br>
+                                This is my second attempt to build my own website and definitely not the last one. The purpose of this place is something we might call a Student Portfolio, aka Storage of my school projects.
+                            </p>
+                        </div>
+                        <table >
+                            <tr>
+                                <td class="skills">HTML</td>
+                                <td>
+                                    <div class="meter-html small">
+                                        <span  style="width: 35%"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skills">CSS</td>
+                                <td>
+                                    <div class="meter-css small">
+                                        <span style="width: 40%"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="skills">JS</td>
+                                <td>
+                                    <div class="meter-js small">
+                                        <span style="width: 15%"></span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   -->
+        <section id="schoolProjects" class="section schoolProjects">
+            <div id="schoolProjectsContainer" class="container-full">
+                <div class="row end-of-row">
+                    <div class="col-12">
+                        <h1 class="thin">School Projects</h1>
+                    </div>
+                </div>
+
+                <div class="row"></div>
+
+                <div class="row slide-margin">
+                    <div class="col-2 end-of-row">
+                        <button class="switch-left" onclick="move(-1)"></button>
+                    </div>
+                    <div class="col-5">
+                        <div id="projects-slides" class="projects-slides">
+                            <img class="slide-pic" id="slide-1" src="images/interactive_animation.png" alt="img">
+                            <img class="slide-pic" id="slide-3" src="images/bleu_the_game.png" alt="img" style="display: none;">
+                            <img class="slide-pic" id="slide-7" src="images/kea_app.png" alt="img" style="display: none;">
+                            <img class="slide-pic" id="slide-9" src="images/calc.png" alt="img" style="display: none;">
+                        </div>
+
+                    </div>
+                    <div class="col-3 adjust-slider-desc">
+                        <div id="slideDesc" class="bio full-height">
+                            Blue - Interactive animation <br/>  Assignment to learn an JS events. The style is inspired by my paintings with Blue the character. <br/> The interactive animation is a simple mini game in progress. The story is questioning believes in God. <br/> A PDF attached with the project documentation.
+                        </div>
+                    </div>
+                    <div class="col-2 beginning-of-row">
+                        <button class="switch-right" onclick="move(+1)"></button>
+                    </div>
+                </div>
+                <div class="row center-of-row">
+                    <div class="col-12">
+                        <a href="http://karolinavalentova.me/more-projects.html" ><img src="./images/more.png" alt="" class="more"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   -->
+        <section id="contact" class="section contact">
+            <div id="contactContainer" class="container-full">
+                <div class="row end-of-row">
+                    <div class="col-12">
+                        <h1 class="thin">Contact</h1>
+                    </div>
+                </div>
+
+                <div class="row"></div>
+                <div class="row center-of-row">
+                    <div class="col-12 col-12-flex">
+                        <div class="bio margin-20per">
+
+                            <div class="contact-me">
+                                <div class="contact-meform">
+                            <form action="mailto:karolinakv@seznam.cz" method="post" enctype="text/plain">
+                                <label>Name: <input type="text" name="name"></label><br>
+                                <label>E-mail: <input type="text" name="mail"></label><br><br>
+                                <label>Comment:<br>
+                                    <textarea name="comment" class="comment"></textarea></label><br><br>
+                                <input type="submit" value="Send" class="send">
+                            </form>
+                                </div></div>
+
+                        </div>
+                        <div class="bio margin-5 margin-10per">
+
+                            <p>Message me through this contact form, If you have any questions about my work or if you are interested in collaboration and future work.
+                                <br><br>
+                                Email: karolinakv@seznam.cz
+                            </p>
+                        <p class="align-center margin-icons-contact">
+                            <a href="https://www.instagram.com/olivia.__.green/" ><img src="./images/instagram.png" alt="" class="instagram"></a>
+                            <a href="https://github.com/karolinavalentova2" ><img src="./images/github.png" alt="" class="github"></a>
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   -->
+        <section id="behindTheScenes" class="section behindTheScenes">
+            <div id="behindTheScenesContainer" class="container-full">
+                <div class="row end-of-row">
+                    <div class="col-12">
+                        <h1 class="thin">Behind the scenes</h1>
+                    </div>
+                </div>
+
+                <div class="row"></div>
+
+                <div class="row slide-margin">
+                    <div class="col-2 end-of-row">
+                        <button class="switch-left" onclick="behindScenesMove(-1)"></button>
+                    </div>
+                    <div class="col-5">
+                        <div id="scenes-slides" class="behind-slides">
+                            <img class="scenes-slide-pic" id="slides-1" src="images/documentation.png" alt="img">
+                            <img class="scenes-slide-pic" id="slides-2" src="images/Style_tile_ofc.png" alt="img" style="display: none;">
+                            <img class="scenes-slide-pic" id="slides-3" src="images/xd_prototype.png" alt="img" style="display: none;">
+                        </div>
+
+                    </div>
+                    <div class="col-3 adjust-slider-desc disable-phone-tablet">
+                        <div class="bio full-height scenes-slide-desc" id="scenes-slide-1">
+                            Documentation<br/>
+                            Explaining the assignment, design, process, code, challenges and conclusion with remarks.
+                        </div>
+                        <div class="bio full-height scenes-slide-desc" style="display: none;" id="scenes-slide-2">
+                            Style tile<br/>
+                            Explaining the visual elements of the website.
+                        </div>
+                        <div class="bio full-height scenes-slide-desc" style="display: none;" id="scenes-slide-3">
+                            XD Prototype<br/>
+                            A interactive prototype to the website.The complete look with all future features.
+                        </div>
+                    </div>
+                    <div class="col-2 beginning-of-row">
+                        <button class="switch-right" onclick="behindScenesMove(+1)"></button>
+                    </div>
+                </div>
+                <div class="row center-of-row">
+                    <div class="col-12">
+                        <a href="http://karolinavalentova.me/more-scenes.html" ><img src="./images/more.png" alt="" class="more"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- NAVIGATION -->
+        <div id="navigator-nav" class="navigator__nav navigator__nav--right disable-phone-tablet">
+            <ul class="navigator__nav__items">
+                <li class="navigator__nav__item active" id="homeButton">
+                    <a class="navigator__nav__button" href="#home"></a>
+                </li>
+                <li class="navigator__nav__item" id="aboutMeButton">
+                    <a class="navigator__nav__button" href="#aboutMe"></a>
+                </li>
+                <li class="navigator__nav__item" id="projectsButton">
+                    <a class="navigator__nav__button" href="#schoolProjects"></a>
+                </li>
+                <li class="navigator__nav__item" id="contactButton">
+                    <a class="navigator__nav__button" href="#contact"></a>
+                </li>
+                <li class="navigator__nav__item" id="behindScenesButton">
+                    <a class="navigator__nav__button" href="#behindTheScenes"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- END NAVIGATION -->
+        <script src="scripts.js" async></script>
+    </body>
+</html>
